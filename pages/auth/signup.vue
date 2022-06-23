@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl mx-auto mt-6">
+  <div class="max-w-6xl mx-auto mt-28">
     <form
       @submit.prevent="handleSubmit"
       class="rounded  md:ring-1 ring-gray-200 shadow-sm space-y-6 w-11/12 md:mb-0 pb-3 mb-10 px-2 sm:w-10/12 lg:w-6/12 mx-auto md:p-6"
@@ -90,6 +90,7 @@ export default {
         this.formData.industry = ""
     },
     handleSubmit() {
+      // https://annie-blog.herokuapp.com/
         console.log(this.formData)
         this.resetInputFields();
     },

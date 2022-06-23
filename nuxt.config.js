@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "user_app",
+    title: "Home | Annes Blog",
     htmlAttrs: {
       lang: "en",
     },
@@ -30,11 +30,26 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/fontawesome",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/image"],
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/axios"
+  ],
+
+  axios : {    
+    baseURL : "https://annie-blog.herokuapp.com/"
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+    fontawesome: {
+    icons: {
+      solid : true,
+      brands : true
+    }
+  }
 };

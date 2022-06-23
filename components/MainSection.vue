@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="max-w-6xl mx-auto px-5 lg:px-0 pt-14 pb-10 lg:pt-12 mt-20">
+    <main class="container mx-auto lg:px-0 pt-14 pb-10 lg:pt-12 mt-20">
       <h1
         class="select-none capitalize font-semibold text-4xl lg:text-7xl text-center leading-snug"
       >
